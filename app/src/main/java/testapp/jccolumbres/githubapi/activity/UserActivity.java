@@ -1,8 +1,10 @@
 package testapp.jccolumbres.githubapi.activity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -90,6 +92,12 @@ public class UserActivity extends AppCompatActivity{
 
             }
         });
+    }
+    public void loadOwnRepos(View view){
+        Intent i = new Intent(this,Repositories.class);
+        i.putExtra("username",newString);
+        startActivity(i);
+
     }
 }
 
