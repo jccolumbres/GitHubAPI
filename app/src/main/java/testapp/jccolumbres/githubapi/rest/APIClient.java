@@ -32,4 +32,20 @@ public class APIClient {
      */
 
     //Rebase example
+
+
+    /* Retrofit with OkHttpLogger
+        //Create Logger
+    private static HttpLoggingInterceptor logger =
+            new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY);
+
+    //Create client to contain logger
+    private static OkHttpClient.Builder okHttp =
+            new OkHttpClient.Builder().addInterceptor(logger);
+
+    private static Retrofit.Builder builder = new Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(okHttp.build());// add this line to build okhttp client along with retrofit
+     */
 }
